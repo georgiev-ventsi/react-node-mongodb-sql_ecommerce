@@ -18,10 +18,32 @@ body{
     "footer";
     grid-template-columns: 1fr;
     grid-template-rows: 5rem 1fr 5rem;
+    height: 100%;
 }
 
 .header{
     grid-area: header;
+    background-color: #203040;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand a{
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-links a{
+    color: #ffffff;   
+    text-decoration: none;
+}
+
+.header-links a:hover{
+    color: #ff8000;
 }
 
 .main{
