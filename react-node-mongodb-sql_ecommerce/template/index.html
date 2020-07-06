@@ -10,18 +10,29 @@
     <div class="grid-container">
         <header class="header">
             <div class="brand">
-                <button class="brand-button">
+                <button class="brand-button" onclick="openMenu()">
                     <!-- ASCII hamburger menu -->
                     &#9776;
                 </button>
                 <a href="./index.html">Husqvarna</a>
             </div>
             <div class="header-links">
-                <a href="cart.html">Cart</a>
-                <a href="signin.html">Sing In</a>
+                <a href="cart.html">Количка</a>
+                <a href="signin.html">ВЛЕЗ</a>
             </div>
         </header>
-
+        <aside class="sidebar">
+            <h3>Категории</h3>
+            <button class="sidebar-close-button" onclick="closeMenu()">x</button>
+            <ul>
+                <li>
+                    <a href="index.html">Косачки роботи</a>
+                </li>
+                <li>
+                    <a href="index.html">Бензинови триони</a>
+                </li>
+            </ul>
+        </aside>
         <main class="main">
             <div class="content">
                 <ul class="products">
@@ -90,6 +101,6 @@
         </footer>
     </div>
     
-    
+    <script src="../scripts/sandwichButton.js"></script>
 </body>
 </html>
