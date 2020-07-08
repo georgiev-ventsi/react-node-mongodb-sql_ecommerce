@@ -133,6 +133,7 @@ a:hover{
 
 .sidebar{
   position: fixed;
+  transition: all 0.5s;
   transform: translateX(-30rem);
   width: 30rem;
   background-color: #f0f0f0;
@@ -155,4 +156,8 @@ a:hover{
   position: absolute;
   right: .5rem;
   top: 1.5rem
+}
+
+.categories-tytle{
+  text-align: center;
 }
