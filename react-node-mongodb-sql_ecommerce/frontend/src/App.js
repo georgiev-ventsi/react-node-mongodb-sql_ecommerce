@@ -1,3 +1,6 @@
+// https://www.youtube.com/watch?v=Fy9SdZLBTOo&t=3974s
+// 1:18
+
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
@@ -33,7 +36,7 @@ function App() {
                     </div>
                 </header>
                 <aside className="sidebar">
-                    <h3 class="categories-tytle">Категории</h3>
+                    <h3 className="categories-tytle">Категории</h3>
                     <button className="sidebar-close-button" onClick={closeMenu}>x</button>
                     <ul>
                         <li>
