@@ -3,6 +3,7 @@ export default {
     products: [
         // each object is product
         {
+            _id: '105',
             name: 'Automower 105',
             category: 'Косачки роботи',
             image: '/images/am105.png',
@@ -12,6 +13,7 @@ export default {
             numReviews: 10
         },
         {
+            _id: '305',
             name: 'Automower 305',
             category: 'Косачки роботи',
             image: '/images/am105.png',
@@ -21,6 +23,7 @@ export default {
             numReviews: 3
         },
         {
+            _id: '310',
             name: 'Automower 310',
             category: 'Косачки роботи',
             image: '/images/am105.png',
@@ -30,6 +33,7 @@ export default {
             numReviews: 5
         },
         {
+            _id: '315',
             name: 'Automower 315',
             category: 'Косачки роботи',
             image: '/images/am105.png',
@@ -39,6 +43,7 @@ export default {
             numReviews: 2
         },
         {
+            _id: '315x',
             name: 'Automower 315 X-Series',
             category: 'Косачки роботи',
             image: '/images/am105.png',
@@ -48,6 +53,7 @@ export default {
             numReviews: 3
         },
         {
+            _id: '545',
             name: 'Husqvarna 545 Mark II',
             category: 'Бензинови триони',
             image: '/images/am105.png',
