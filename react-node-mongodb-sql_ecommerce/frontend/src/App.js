@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
+import data from './data';
 import './App.css';
+
 
 function App() {
 
@@ -51,7 +52,7 @@ function App() {
                                             <a href="product.html">"{product.name}</a>
                                         </div>
                                         <div className="product-brand">{product.brand}</div>
-                                        <div className="product-price">{product.price}</div>
+                                        <div className="product-price">{product.price} лв.</div>
                                         <div className="product-rating">{product.rating} Stars({product.numReviews})</div>
                                     </div>
                                 </li>
