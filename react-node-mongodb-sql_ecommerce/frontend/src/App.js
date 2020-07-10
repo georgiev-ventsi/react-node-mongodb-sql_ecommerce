@@ -1,6 +1,3 @@
-// https://www.youtube.com/watch?v=Fy9SdZLBTOo&t=3974s
-// 1:18
-
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
