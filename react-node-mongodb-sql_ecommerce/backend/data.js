@@ -11,7 +11,8 @@ export default {
             brand: 'Husqvarna',
             description: 'Компактна 3-колесна роботизирана косачка за ефикасно косене на повече открити тревни площи. Подходяща е за по-малки морави до 600 m² като може да обработва и склонове с наклон от 25%. Лесна за употреба с възможност за персонални настройки. Като опция се предлага полярно бял цвят. ',
             rating: 4.5,
-            numReviews: 10
+            numReviews: 10,
+            countInStock: 6
         },
         {
             _id: '305',
@@ -21,7 +22,8 @@ export default {
             price: 2990,
             brand: 'Husqvarna',
             rating: 5,
-            numReviews: 3
+            numReviews: 3,
+            countInStock: 1
         },
         {
             _id: '310',
@@ -31,7 +33,8 @@ export default {
             price: 3450,
             brand: 'Husqvarna',
             rating: 4,
-            numReviews: 5
+            numReviews: 5,
+            countInStock: 2
         },
         {
             _id: '315',
@@ -51,7 +54,8 @@ export default {
             price: 4100,
             brand: 'Husqvarna',
             rating: 5,
-            numReviews: 3
+            numReviews: 3,
+            countInStock: 6
         },
         {
             _id: '545',
@@ -61,7 +65,8 @@ export default {
             price: 1200,
             brand: 'Husqvarna',
             rating: 4,
-            numReviews: 21
+            numReviews: 21,
+            countInStock: 12
         }
     ]
 }
