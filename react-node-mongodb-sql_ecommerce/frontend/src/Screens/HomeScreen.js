@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios'
+import axios from 'axios';
 
 function HomeScreen(props) {
 
     // ReactHooks
-    const [products, setProducts] = useState([]);
+    const [products, setProduct] = useState([]);
 
-    useEffect(() =>{
+    useEffect(() => {
         const fetchData = async () => {
             const {data} = await axios.get("/api/products");
-            setProducts(data)
+            setProduct(data);
         }
+        fetchData();
         return () => {
             // 
         };
@@ -21,7 +22,7 @@ function HomeScreen(props) {
         {
             // render products
             products.map(product =>
-                <li>
+                <li key={product._id}>
                     <div className="product">
                         <Link to={'/product/' + product._id} >
                             <img className="product-image" src={product.image} alt="automower 105" />
