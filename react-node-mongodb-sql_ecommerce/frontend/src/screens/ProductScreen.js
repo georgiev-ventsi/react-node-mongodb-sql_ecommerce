@@ -16,6 +16,10 @@ function ProductScreen(props) {
         };
     }, []);
 
+    const handleAddToCart = () => {
+        props.history.push("/cart/" + props.match.params.id + "?qty=" + qty)
+    }
+
     return (
         <div>
             <div className="back-to-result">
@@ -50,7 +54,7 @@ function ProductScreen(props) {
                                         Цена: {product.price}
                                     </li>
                                     <li>
-                                        Статус: {product.status}
+                                        Статус: {product.countInStock > 0 ? "Налично" : "Не е налично"}
                                     </li>
                                     <li>
                                         Количество: <select value={qty} onChange={(e) => { setQty(e.target.value) }} >
@@ -60,7 +64,11 @@ function ProductScreen(props) {
                                         </select>
                                     </li>
                                     <li>
-                                        <button className="button" >Купи</button>
+
+                                        {product.countInStock > 0 ?
+                                            <button onClick={handleAddToCart} className="button" >Купи</button> :
+                                            <div>Моля, направете запитване за алтернативен продукт!</div>
+                                        }
                                     </li>
                                 </ul>
                             </div>
