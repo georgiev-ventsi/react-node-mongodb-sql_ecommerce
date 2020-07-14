@@ -29,23 +29,27 @@ function CartScreen(props) {
                         cartItems.length === 0 ?
                             <div>Кошницата е празна</div> :
                             cartItems.map(item =>
-                                <div>
-                                    <img src={item.image} alt="product" />
-                                    <div className="cart-name">
-                                        {item.name}
-                                    </div>
+                                <li>
                                     <div>
-                                        Количество:
-                                    <select>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select>
+                                        <div className="cart-image">
+                                            <img src={item.image} alt="product" />
+                                        </div>
+                                        <div className="cart-name">
+                                            {item.name}
+                                        </div>
+                                        <div>
+                                            Количество:
+                                            <select>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                        <div className="cart-price">
+                                            {item.price} лв.
+                                        </div>
                                     </div>
-                                    <div>
-                                        {item.price}
-                                    </div>
-                                </div>
+                                </li>
                             )
                     }
 
