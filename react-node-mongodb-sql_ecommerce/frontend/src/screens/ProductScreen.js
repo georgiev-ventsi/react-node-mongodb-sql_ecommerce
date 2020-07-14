@@ -1,6 +1,3 @@
-// https://www.youtube.com/watch?v=Fy9SdZLBTOo&t=7148s
-// 2:29
-
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
@@ -69,7 +66,7 @@ function ProductScreen(props) {
                                     <li>
 
                                         {product.countInStock > 0 ?
-                                            <button onClick={handleAddToCart} className="button" >Купи</button> :
+                                            <button onClick={handleAddToCart} className="button-primary" >Добави в количката</button> :
                                             <div>Моля, направете запитване за алтернативен продукт!</div>
                                         }
                                     </li>

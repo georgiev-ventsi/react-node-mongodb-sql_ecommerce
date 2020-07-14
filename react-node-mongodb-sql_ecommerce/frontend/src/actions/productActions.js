@@ -1,5 +1,7 @@
-import { PRODUCT_LIST_REQEST, PRODUCT_LIST_SUCCESS, PRODUCT_LIST_FAIL,
-     PRODUCT_DETAILS_REQEST, PRODUCT_DETAILS_SUCCESS, PRODUCT_DETAILS_FAIL } from "../constants/productConstants";
+import {
+    PRODUCT_LIST_REQEST, PRODUCT_LIST_SUCCESS, PRODUCT_LIST_FAIL,
+    PRODUCT_DETAILS_REQEST, PRODUCT_DETAILS_SUCCESS, PRODUCT_DETAILS_FAIL
+} from "../constants/productConstants";
 import axios from 'axios';
 
 const listProducts = () => async (dispatch) => {
