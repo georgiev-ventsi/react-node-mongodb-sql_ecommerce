@@ -25,6 +25,7 @@ function App() {
                             &#9776;
                         </button>
                         <Link to="/">Husqvarna</Link>
+
                     </div>
                     <div className="header-links">
                         <a href="cart.html">Количка</a>
