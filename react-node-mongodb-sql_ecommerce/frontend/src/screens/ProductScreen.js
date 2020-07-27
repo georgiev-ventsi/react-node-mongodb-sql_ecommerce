@@ -66,7 +66,7 @@ function ProductScreen(props) {
                                     <li>
 
                                         {product.countInStock > 0 ?
-                                            <button onClick={handleAddToCart} className="button-primary" >Добави в количката</button> :
+                                            <button onClick={handleAddToCart} className="button primary" >Добави в количката</button> :
                                             <div>Моля, направете запитване за алтернативен продукт!</div>
                                         }
                                     </li>

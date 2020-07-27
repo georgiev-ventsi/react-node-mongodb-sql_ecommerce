@@ -24,6 +24,9 @@ function SigninScreen(props) {
             <form onSubmit={submitHandler}>
                 <ul className="form-container">
                     <li>
+                        <h2>ВХОД</h2>
+                    </li>
+                    <li>
                         <label for="email">
                             Email:
                         </label>
@@ -36,13 +39,13 @@ function SigninScreen(props) {
                         </input>
                     </li>
                     <li>
-                        <button type="submit" className="button-primary">ВХОД</button>
+                        <button type="submit" className="button primary">ВХОД</button>
                     </li>
                     <li>
                         Все още нямате регистрация?
                     </li>
                     <li>
-                        <Link to="/register" className="button-primary">Създай своя акаунт сега!</Link>
+                        <Link to="/register" className="button secondary text-center">Създайте своя акаунт сега!</Link>
                     </li>
                 </ul>
             </form>
