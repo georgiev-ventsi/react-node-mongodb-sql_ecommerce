@@ -15,7 +15,7 @@ router.post('/signin', async (req, res) => {
             name: signinUser.name,
             email: signinUser.email,
             isAdmin: signinUser.isAdmin,
-            token: getToken(user)
+            token: getToken(signinUser)
         })
 
     } else {
@@ -28,7 +28,7 @@ router.get("/createadmin", async (req, res) => {
         const user = new User({
             name: 'Hives',
             email: 'v.g.al.hq@gmail.com',
-            password: '8877yy',
+            password: '8877yy66',
             isAdmin: true
         });
 
@@ -41,3 +41,6 @@ router.get("/createadmin", async (req, res) => {
 });
 
 export default router;
+
+
+// 3:46:20

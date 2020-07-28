@@ -14,31 +14,31 @@ function HomeScreen(props) {
         return () => {
             // 
         };
-     }, [])
+    })
 
-     return loading ? <div>Loading...</div> :
-     error ? <div>{error}</div> :
-         (
-             <ul className="products">
-                 {
-                     // render products
-                     products.map(product =>
-                         <li key={product._id}>
-                             <div className="product">
-                                 <Link to={'/product/' + product._id} >
-                                     <img className="product-image" src={product.image} alt="product image" />
-                                 </Link>
-                                 <div className="product-name">
-                                     <Link to={'/product/' + product._id} >{product.name}</Link>
-                                 </div>
-                                 <div className="product-brand">{product.brand}</div>
-                                 <div className="product-price">{product.price} лв.</div>
-                                 <div className="product-rating">{product.rating} Stars({product.numReviews})</div>
-                             </div>
-                         </li>
-                     )
-                 }
-             </ul>)
+    return loading ? <div>Loading...</div> :
+        error ? <div>{error}</div> :
+            (
+                <ul className="products">
+                    {
+                        // render products
+                        products.map(product =>
+                            <li key={product._id}>
+                                <div className="product">
+                                    <Link to={'/product/' + product._id} >
+                                        <img className="product-image" src={product.image} alt="product" />
+                                    </Link>
+                                    <div className="product-name">
+                                        <Link to={'/product/' + product._id} >{product.name}</Link>
+                                    </div>
+                                    <div className="product-brand">{product.brand}</div>
+                                    <div className="product-price">{product.price} лв.</div>
+                                    <div className="product-rating">{product.rating} Stars({product.numReviews})</div>
+                                </div>
+                            </li>
+                        )
+                    }
+                </ul>)
 }
 
 export default HomeScreen;
