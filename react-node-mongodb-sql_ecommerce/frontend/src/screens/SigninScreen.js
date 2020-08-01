@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { signin } from '../actions/userActions';
+
 
 function SigninScreen(props) {
 
@@ -16,14 +17,16 @@ function SigninScreen(props) {
             props.history.push("/");
         }
         return () => {
-            // 
+            //
         };
     }, [userInfo]);
 
     const submitHandler = (e) => {
         e.preventDefault();
         dispatch(signin(email, password));
+
     }
+
     return (
         <div className="form">
             <form onSubmit={submitHandler}>

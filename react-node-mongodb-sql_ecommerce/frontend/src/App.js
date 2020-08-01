@@ -30,7 +30,7 @@ function App() {
                     </div>
                     <div className="header-links">
                         <a href="cart.html">Количка</a>
-                        <Link to="/signin">ВЛЕЗ</Link>
+                        <Link to="/signin">ВХОД</Link>
                     </div>
                 </header>
                 <aside className="sidebar">

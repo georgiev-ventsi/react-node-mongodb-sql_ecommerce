@@ -13,4 +13,4 @@ const signin = (email, password) => async (dispatch) => {
     }
 }
 
-export { signin };
+export { signin }
