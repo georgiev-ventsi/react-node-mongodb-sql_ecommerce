@@ -10,19 +10,25 @@ import {
     productListReducer,
     productDetailstReducer
 } from './reducer/productReducers';
-import { cartReducer } from './reducer/cartReducers';
+import {
+    cartReducer
+} from './reducer/cartReducers';
+
 
 
 const cartItems = Cookie.getJSON("cartItems") || [];
 
-const initialState = { cart: { cartItems } };
-
+const initalState = {
+    cart: {
+        cartItems
+    }
+};
 const reducer = combineReducers({
     productList: productListReducer,
     productDetails: productDetailstReducer,
-    cart: cartReducer,
+    cart: cartReducer
 })
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(reducer, initialState, composeEnhancer(applyMiddleware(thunk)));
+const store = createStore(reducer, initalState, composeEnhancer(applyMiddleware(thunk)));
 export default store;

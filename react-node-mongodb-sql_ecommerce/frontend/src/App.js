@@ -29,6 +29,7 @@ function App() {
                     </div>
                     <div className="header-links">
                         <a href="cart.html">Количка</a>
+                        <a href="signin.html">ВЛЕЗ</a>
                     </div>
                 </header>
                 <aside className="sidebar">
@@ -48,6 +49,7 @@ function App() {
                         <Route path="/product/:id" component={ProductScreen} />
                         <Route path="/cart/:id?" component={CartScreen} />
                         <Route path="/" exact={true} component={HomeScreen} />
+                       
                     </div>
                 </main>
                 <footer className="footer">

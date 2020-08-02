@@ -72,7 +72,7 @@ function CartScreen(props) {
                     Общо количество ( {cartItems.reduce((a, c) => a + c.qty, 0)} бр. )
                     : {cartItems.reduce((a, c) => a + c.price * c.qty, 0)} лв.
                 </h3>
-                <button onClick={checkoutHandler} className="button primary" disabled={cartItems.length === 0}>
+                <button onClick={checkoutHandler} className="button-primary" disabled={cartItems.length === 0}>
                     Завърши покупката!
                 </button>
             </div>
