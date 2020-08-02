@@ -10,7 +10,7 @@ function CartScreen(props) {
 
     const productId = props.match.params.id;
     const qty = props.location.search ? Number(props.location.search.split("=")[1]) : 1;
-    const dispatch = useDispatch(); 
+    const dispatch = useDispatch();
     const removeFromCartHandler = (productId) => {
         dispatch(removeFromCart(productId))
     }
@@ -21,9 +21,8 @@ function CartScreen(props) {
         }
     }, []);
 
-    const checkoutHandler = () => {
-        props.history.push("/signin?redirect=shipping")
-    }
+    cartItems.reduce((a, c) => a + c.qty, 0)
+    const endPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0)
 
     return (
         <div className="cart">
@@ -49,7 +48,7 @@ function CartScreen(props) {
                                         </div>
                                         <div>
                                             Количество:
-                                            <select value={item.qty} onChange={(e)=> { dispatch(addToCart(item.product, e.target.value))}}>
+                                            <select value={item.qty} onChange={(e) => { dispatch(addToCart(item.product, e.target.value)) }}>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -69,10 +68,10 @@ function CartScreen(props) {
             </div>
             <div className="cart-action">
                 <h3>
-                    Общо количество ( {cartItems.reduce((a, c) => a + c.qty, 0)} бр. )
-                    : {cartItems.reduce((a, c) => a + c.price * c.qty, 0)} лв.
+                    Вземи продуктите на стойност: {endPrice} лв. с включено ДДС
+
                 </h3>
-                <button onClick={checkoutHandler} className="button-primary" disabled={cartItems.length === 0}>
+                <button className="button-primary" disabled={cartItems.length === 0}>
                     Завърши покупката!
                 </button>
             </div>

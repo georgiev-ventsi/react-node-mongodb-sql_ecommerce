@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import HomeScreen from './screens/HomeScreen';
+import ChainsawScreen from './screens/ChainsawScreen';
 import ProductScreen from './screens/ProductScreen';
 import CartScreen from './screens/CartScreen';
 
@@ -24,12 +24,12 @@ function App() {
                             {/* <!-- ASCII hamburger menu --> */}
                             &#9776;
                         </button>
-                        <Link to="/">Husqvarna</Link>
+                        <Link to="/">Home</Link>
+                        <Link to="/chainsaws">Резачки Husqvarna</Link>
 
                     </div>
                     <div className="header-links">
-                        <a href="cart.html">Количка</a>
-                        <a href="signin.html">ВЛЕЗ</a>
+                        <a href="/cart">Количка</a>
                     </div>
                 </header>
                 <aside className="sidebar">
@@ -48,12 +48,12 @@ function App() {
                     <div className="content">
                         <Route path="/product/:id" component={ProductScreen} />
                         <Route path="/cart/:id?" component={CartScreen} />
+                        <Route path="/chainsaws" component={ChainsawScreen} />
                         <Route path="/" exact={true} component={HomeScreen} />
-                       
                     </div>
                 </main>
                 <footer className="footer">
-                    All rights reserved.
+                    All rights reserved for askVS LTD / 2020
                 </footer>
             </div>
         </BrowserRouter>
