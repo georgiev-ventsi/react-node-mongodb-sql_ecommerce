@@ -92,7 +92,7 @@ a:hover {
   padding: 0;
   /* flex grow, flex shrink, width */
   flex: 0 1 34rem;
-  margin: 1rem;
+  margin: 4rem;
   height: 30rem;
   border-bottom: 0.1rem #c0c0c0 solid;
 }
@@ -107,11 +107,12 @@ a:hover {
 .product-name {
   font-size: 2rem;
   font-weight: bold;
+  letter-spacing: 0.08rem;
 }
 
 .product-techData {
-  font-size: 1.2rem;
-  color: #808080;
+  font-size: 1.5rem;
+  color: #666;
 }
 
 .product-price {

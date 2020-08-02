@@ -32,11 +32,11 @@ function HomeScreen(props) {
                                         <div className="product-name">
                                             <Link to={'/product/' + product._id} >{product.name}</Link>
                                         </div>
-                                        <div className="product-techData">{product.techDisplacement}</div>
-                                        <div className="product-techData">{product.techPower}</div>
-                                        <div className="product-techData">{product.techBar}</div>
-                                        <div className="product-price">{product.price} лв.</div>
-                                        <div className="product-sale">Промо цена {product.salePrice} лв.</div>
+                                        <div className="product-techData">Обем на цилиндъра: {product.techDisplacement} см³</div>
+                                        <div className="product-techData">Мощност: {product.techPower} kW</div>
+                                        <div className="product-techData">Дължина на шината: {product.techBar}</div>
+                                        <div className="product-price"> <strike>Цена: {product.price},00 лв.</strike></div>
+                                        <div className="product-sale">Промо цена: {product.salePrice},00 лв.</div>
                                     </div>
                                 </li>
                                 :
@@ -48,10 +48,10 @@ function HomeScreen(props) {
                                         <div className="product-name">
                                             <Link to={'/product/' + product._id} >{product.name}</Link>
                                         </div>
-                                        <div className="product-techData">{product.techDisplacement}</div>
-                                        <div className="product-techData">{product.techPower}</div>
-                                        <div className="product-techData">{product.techBar}</div>
-                                        <div className="product-price">{product.price} лв.</div>
+                                        <div className="product-techData">Обем на цилиндъра: {product.techDisplacement} см³</div>
+                                        <div className="product-techData">Мощност: {product.techPower} kW</div>
+                                        <div className="product-techData">Дължина на шината: {product.techBar}</div>
+                                        <div className="product-price">Цена: {product.price},00 лв.</div>
                                     </div>
                                 </li>
 
