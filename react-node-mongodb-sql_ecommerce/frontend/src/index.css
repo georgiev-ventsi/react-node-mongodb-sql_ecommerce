@@ -1,3 +1,37 @@
+/* import fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato&family=Roboto&family=Sofia&display=swap");
+
+/* Constants */
+:root {
+  --primary-color: #45ccb8;
+  --light-gray: #2b3032a1;
+  --border: #2b303218;
+  --sales-color: #ff0000;
+  --roboto: "Roboto", sans-serif;
+  --gugi: "Gugi", cursive;
+  --sofia: "Sofia", cursive;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.bg-pimary-color {
+  background-color: var(--primary-color) !important;
+}
+
+.sales-color {
+  color: var(--sales-color);
+}
+
+.font-roboto {
+  font-family: var(--roboto);
+}
+
+.lightblue {
+  color: lightblue;
+}
+
 /* main */
 
 html {
@@ -32,20 +66,27 @@ button {
 }
 
 .header {
+  position: fixed;
+  width: 100%;
   grid-area: header;
-  background-color: #203040;
-  color: #ffffff;
+  background-color: var(--primary-color);
+  font-family: var(--roboto);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
 }
 
-.brand a {
-  color: #ffffff;
+.askvs-logo {
+  max-height: 7rem;
+  border-radius: 50%;
+  margin-left: 3rem;
+}
+
+a {
+  text-decoration: none;
   font-size: 2.5rem;
   font-weight: bold;
-  text-decoration: none;
 }
 
 .header-links a {
@@ -60,19 +101,15 @@ button {
 
 .main {
   grid-area: main;
+  margin-top: 3.5rem;
 }
 
 .footer {
   grid-area: footer;
-  background-color: #203040;
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-a {
-  text-decoration: none;
 }
 
 a:hover {
@@ -123,7 +160,6 @@ a:hover {
 .product-sale {
   font-size: 2.5rem;
   font-weight: bolder;
-  color: red;
 }
 
 .product-image {
@@ -133,48 +169,6 @@ a:hover {
 
 .product-rating {
   margin-bottom: 1rem;
-}
-
-/* Sidebar */
-
-.brand-button {
-  font-size: 4rem;
-  padding: 0.5rem;
-  background: none;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.sidebar {
-  position: fixed;
-  transition: all 0.5s;
-  transform: translateX(-30rem);
-  width: 30rem;
-  background-color: #f0f0f0;
-  height: 100%;
-}
-
-.sidebar.open {
-  transform: translateX(0);
-}
-
-.sidebar-close-button {
-  border-radius: 50%;
-  border: 0.1rem #000000 solid;
-  width: 3rem;
-  height: 3rem;
-  padding: 0.5rem;
-  font-size: 2rem;
-  padding-top: 0;
-  cursor: pointer;
-  position: absolute;
-  right: 0.5rem;
-  top: 1.5rem;
-}
-
-.categories-tytle {
-  text-align: center;
 }
 
 /* Product Details */

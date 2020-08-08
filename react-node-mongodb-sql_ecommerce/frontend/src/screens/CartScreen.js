@@ -21,6 +21,7 @@ function CartScreen(props) {
         }
     }, []);
 
+    // calculate total products and total price
     cartItems.reduce((a, c) => a + c.qty, 0)
     const endPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0)
 

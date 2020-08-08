@@ -36,7 +36,7 @@ function ChainsawScreen(props) {
                                         <div className="product-techData">Мощност: {product.techPower} kW</div>
                                         <div className="product-techData">Дължина на шината: {product.techBar}</div>
                                         <div className="product-price"> <strike>Цена: {product.price},00 лв.</strike></div>
-                                        <div className="product-sale">Промо цена: {product.salePrice},00 лв.</div>
+                                        <div className="product-sale sales-color">Промо цена: {product.salePrice},00 лв.</div>
                                     </div>
                                 </li>
                                 :
