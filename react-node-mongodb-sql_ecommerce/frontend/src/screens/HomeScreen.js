@@ -1,32 +1,112 @@
 import React from 'react';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
+
+import ChainsawBanner from "../assets/banners/chainsaw/resized-chainsaw-banner.png";
+import BrushcutterBanner from "../assets/banners/brushcutter/scaled-accu-brushcutter.png";
+import AutomowerBanner from "../assets/banners/automower/resized-automower-banner.png";
+
+import PowerSaw from "../assets/categories/husqvarna-images/powersaw.png";
+import Brushcutter from "../assets/categories/husqvarna-images/brushcutter.png";
+import Chainsaw from "../assets/categories/husqvarna-images/chainsaw.png"
+import Automower from "../assets/categories/husqvarna-images/435awd.png"
+import Hedgetrimmer from "../assets/categories/husqvarna-images/hedge.png"
+import Blower from "../assets/categories/husqvarna-images/blower.png"
 
 function HomeScreen(props) {
 
-    return (<div>
+    const slideImages = [
+        ChainsawBanner,
+        BrushcutterBanner,
+        AutomowerBanner
+    ];
 
-        <div className="site-slider">
-            <div className="slider-one">
-                <div>
+    const zoomOutProperties = {
+        indicators: true,
+        scale: 0.4
+    }
+
+    return (<div className="main-homescreen">
+        <div className="slide-one" >
+            <div className="slide-container">
+                <Slide {...zoomOutProperties}>
+                    <div className="each-slide">
+                        <div style={{ 'backgroundImage': `url(${slideImages[0]})` }}>
+                        </div>
+                    </div>
+                    <div className="each-slide">
+                        <div style={{ 'backgroundImage': `url(${slideImages[1]})` }}>
+                        </div>
+                    </div>
+                    <div className="each-slide">
+                        <div style={{ 'backgroundImage': `url(${slideImages[2]})` }}>
+                        </div>
+                    </div>
+                </Slide>
+            </div>
+        </div>
+        <div>
+
+            {/* Categories */}
+            <div className="main-categories">
+                <div className="category tooltip">
+                    <a href="/">
+                        <img
+                            className="img-responsive"
+                            src={Brushcutter}
+                            alt="brushcutter"
+                        />
+                    </a>
+                    <span class="tooltiptext">моторни коси</span>
+                </div>
+                <div className="category tooltip">
                     <img
-                        src={require('../assets/banners/chainsaw/resized-chainsaw-banner.png')}
+                        className="img-responsive"
+                        src={Chainsaw}
                         alt="chainsaw"
                     />
+                    <span class="tooltiptext">моторни триони</span>
                 </div>
-                <div>
-                    <img
-                        src={require('../assets/banners/brushcutter/scaled-accu-brushcutter.png')}
-                        alt="brushcutter"
-                    />
+                <div className="category tooltip">
+                    <a href="./html/automower.html">
+                        <img
+                            className="img-responsive"
+                            src={Automower}
+                            alt="automower"
+                        />
+                    </a>
+                    <span class="tooltiptext">роботизирани косачки</span>
                 </div>
-                <div>
+                <div className="category tooltip">
                     <img
-                        src={require('../assets/banners/automower/resized-automower-banner.png')}
-                        alt="automower"
+                        className="img-responsive"
+                        src={PowerSaw}
+                        alt="powersaw"
                     />
+                    <span class="tooltiptext">дискови резачки</span>
+                </div>
+                <div className="category tooltip">
+                    <img
+                        className="img-responsive"
+                        src={Hedgetrimmer}
+                        alt="hedgetrimmer"
+                    />
+                    <span class="tooltiptext">ножици за жив плет</span>
+                </div>
+                <div className="category tooltip">
+                    <img
+                        className="img-responsive"
+                        src={Blower}
+                        alt="blower"
+                    />
+                    <span class="tooltiptext">моторни метли</span>
                 </div>
             </div>
         </div>
-    </div>)
+    </div>
+    )
+
+
 }
 
 export default HomeScreen;
