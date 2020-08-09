@@ -1,6 +1,11 @@
 /* import fonts from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato&family=Roboto&family=Sofia&display=swap");
 
+/* import responsive images  */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+
 /* Constants */
 :root {
   --primary-color: #45ccb8;
@@ -32,7 +37,7 @@
   color: lightblue;
 }
 
-/* main */
+/* main --------------------------------------------------------------------*/
 
 html {
   /* 16px ( browser default ) * 62.5 = 10px = 1rem */
@@ -43,10 +48,6 @@ html {
 body {
   font: 1.6rem Helvetica;
   height: 100vh;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  overflow: auto;
 }
 
 button {
@@ -80,6 +81,25 @@ img {
   margin-left: 3rem;
 }
 
+@media screen and (max-width: 500px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--primary-color);
+    font-family: var(--roboto);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    z-index: 1;
+  }
+
+  .askvs-logo {
+    max-height: 10rem;
+    border-radius: 50%;
+    margin-left: 3rem;
+  }
+}
+
 a {
   text-decoration: none;
   font-size: 2.5rem;
@@ -97,7 +117,7 @@ a {
 }
 
 .footer {
-  position: relative;
+  position: static;
   width: 100%;
   height: 50px;
   bottom: 0px;
@@ -115,15 +135,12 @@ a:hover {
   color: #ff8000;
 }
 
-/* Home Screen */
+/* Home Screen --------------------------------------------------------------------*/
 
 .main-homescreen {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
   flex-direction: column;
-  min-height: 200rem;
+  min-height: 300rem;
 }
 
 .slide-one {
@@ -138,11 +155,14 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover;
   height: 50rem;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+.image-wrap {
+  max-width: 100%;
 }
 
 .main-categories {
@@ -184,7 +204,7 @@ a:hover {
   background-color: #555;
   color: #fff;
   text-align: center;
-  padding: 5px 0;
+  padding: 5px 5px;
   border-radius: 6px;
 
   /* Position the tooltip text */
@@ -216,7 +236,7 @@ a:hover {
   opacity: 1;
 }
 
-/* Product Screen */
+/* Product Screen --------------------------------------------------------------------*/
 .products {
   display: flex;
   justify-content: center;
@@ -271,7 +291,7 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-/* Product Details */
+/* Product Details --------------------------------------------------------------------*/
 
 .details {
   display: flex;
@@ -336,7 +356,7 @@ a:hover {
   border: 0.1rem #404040 solid;
 }
 
-/* Cart */
+/* Cart --------------------------------------------------------------------*/
 
 .cart {
   display: flex;

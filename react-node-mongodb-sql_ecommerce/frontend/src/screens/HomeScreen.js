@@ -57,7 +57,7 @@ function HomeScreen(props) {
                             alt="brushcutter"
                         />
                     </a>
-                    <span class="tooltiptext">моторни коси</span>
+                    <span className="tooltiptext">моторни коси</span>
                 </div>
                 <div className="category tooltip">
                     <img
@@ -65,7 +65,7 @@ function HomeScreen(props) {
                         src={Chainsaw}
                         alt="chainsaw"
                     />
-                    <span class="tooltiptext">моторни триони</span>
+                    <span className="tooltiptext">моторни триони</span>
                 </div>
                 <div className="category tooltip">
                     <a href="./html/automower.html">
@@ -75,7 +75,7 @@ function HomeScreen(props) {
                             alt="automower"
                         />
                     </a>
-                    <span class="tooltiptext">роботизирани косачки</span>
+                    <span className="tooltiptext">роботизирани косачки</span>
                 </div>
                 <div className="category tooltip">
                     <img
@@ -83,7 +83,7 @@ function HomeScreen(props) {
                         src={PowerSaw}
                         alt="powersaw"
                     />
-                    <span class="tooltiptext">дискови резачки</span>
+                    <span className="tooltiptext">дискови резачки</span>
                 </div>
                 <div className="category tooltip">
                     <img
@@ -91,7 +91,7 @@ function HomeScreen(props) {
                         src={Hedgetrimmer}
                         alt="hedgetrimmer"
                     />
-                    <span class="tooltiptext">ножици за жив плет</span>
+                    <span className="tooltiptext">ножици за жив плет</span>
                 </div>
                 <div className="category tooltip">
                     <img
@@ -99,7 +99,7 @@ function HomeScreen(props) {
                         src={Blower}
                         alt="blower"
                     />
-                    <span class="tooltiptext">моторни метли</span>
+                    <span className="tooltiptext">моторни метли</span>
                 </div>
             </div>
         </div>
