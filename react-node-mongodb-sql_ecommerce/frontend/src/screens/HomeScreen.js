@@ -1,6 +1,7 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
+import "../index.css"
 
 import ChainsawBanner from "../assets/banners/chainsaw/resized-chainsaw-banner.png";
 import BrushcutterBanner from "../assets/banners/brushcutter/scaled-accu-brushcutter.png";
@@ -26,30 +27,30 @@ function HomeScreen(props) {
         scale: 0.4
     }
 
-    return (<div className="main-homescreen">
-        <div className="slide-one" >
-            <div className="slide-container">
-                <Slide {...zoomOutProperties}>
-                    <div className="each-slide">
-                        <div style={{ 'backgroundImage': `url(${slideImages[0]})` }}>
+    return (
+        <div className="main-homescreen">
+            <div className="slide-one" >
+                <div className="slide-container">
+                    <Slide {...zoomOutProperties}>
+                        <div className="each-slide">
+                            <div style={{ 'backgroundImage': `url(${slideImages[0]})` }}>
+                            </div>
                         </div>
-                    </div>
-                    <div className="each-slide">
-                        <div style={{ 'backgroundImage': `url(${slideImages[1]})` }}>
+                        <div className="each-slide">
+                            <div style={{ 'backgroundImage': `url(${slideImages[1]})` }}>
+                            </div>
                         </div>
-                    </div>
-                    <div className="each-slide">
-                        <div style={{ 'backgroundImage': `url(${slideImages[2]})` }}>
+                        <div className="each-slide">
+                            <div style={{ 'backgroundImage': `url(${slideImages[2]})` }}>
+                            </div>
                         </div>
-                    </div>
-                </Slide>
+                    </Slide>
+                </div>
             </div>
-        </div>
-        <div>
 
             {/* Categories */}
             <div className="main-categories">
-                <div className="category tooltip">
+                <div className="category">
                     <a href="/">
                         <img
                             className="img-responsive"
@@ -57,17 +58,19 @@ function HomeScreen(props) {
                             alt="brushcutter"
                         />
                     </a>
-                    <span className="tooltiptext">моторни коси</span>
+                    <span class="tooltiptext">моторни коси</span>
                 </div>
-                <div className="category tooltip">
-                    <img
-                        className="img-responsive"
-                        src={Chainsaw}
-                        alt="chainsaw"
-                    />
+                <div className="category">
+                    <a href="/chainsaws">
+                        <img
+                            className="img-responsive"
+                            src={Chainsaw}
+                            alt="chainsaw"
+                        />
+                    </a>
                     <span className="tooltiptext">моторни триони</span>
                 </div>
-                <div className="category tooltip">
+                <div className="category">
                     <a href="./html/automower.html">
                         <img
                             className="img-responsive"
@@ -77,7 +80,7 @@ function HomeScreen(props) {
                     </a>
                     <span className="tooltiptext">роботизирани косачки</span>
                 </div>
-                <div className="category tooltip">
+                <div className="category">
                     <img
                         className="img-responsive"
                         src={PowerSaw}
@@ -85,7 +88,7 @@ function HomeScreen(props) {
                     />
                     <span className="tooltiptext">дискови резачки</span>
                 </div>
-                <div className="category tooltip">
+                <div className="category">
                     <img
                         className="img-responsive"
                         src={Hedgetrimmer}
@@ -93,7 +96,7 @@ function HomeScreen(props) {
                     />
                     <span className="tooltiptext">ножици за жив плет</span>
                 </div>
-                <div className="category tooltip">
+                <div className="category">
                     <img
                         className="img-responsive"
                         src={Blower}
@@ -101,12 +104,9 @@ function HomeScreen(props) {
                     />
                     <span className="tooltiptext">моторни метли</span>
                 </div>
+
             </div>
-        </div>
-    </div>
-    )
-
-
+        </div>)
 }
 
 export default HomeScreen;
