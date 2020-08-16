@@ -285,5 +285,21 @@ export default {
             salePrice: 2078,
             countInStock: 2
         }
+    ],
+    hedgetrimmers: [
+        // each object is product
+        {
+            _id: '966532401',
+            name: 'Husqvarna 122HD60',
+            category: 'Ножици за жив плет',
+            image: '/images/hedgetrimmer/122hd60.png',
+            price: 585,
+            techDisplacement: 21.7,
+            techPower: 0.6,
+            techBar: 'Препоръчителен максимален диаметър на клонките - 20 mm',
+            description: 'Husqvarna 122HD60 е ножица за жив плет с ниско тегло и ниско ниво на шума за употреба в дома. С лесни за използване функции като Smart Start® и регулируема задна ръкохватка.',
+            salePrice: 520,
+            countInStock: 2
+        }
     ]
 }

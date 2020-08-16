@@ -90,7 +90,7 @@ function HomeScreen(props) {
                     <span className="tooltiptext">дискови резачки</span>
                 </div>
                 <div className="category">
-                    <a href="/powersaws">
+                    <a href="/hedgetrimmers">
                         <img
                             className="img-responsive"
                             src={Hedgetrimmer}
@@ -101,11 +101,13 @@ function HomeScreen(props) {
                     <span className="tooltiptext">ножици за жив плет</span>
                 </div>
                 <div className="category">
-                    <img
-                        className="img-responsive"
-                        src={Blower}
-                        alt="blower"
-                    />
+                    <a href="/">
+                        <img
+                            className="img-responsive"
+                            src={Blower}
+                            alt="blower"
+                        />
+                    </a>
                     <span className="tooltiptext">моторни метли</span>
                 </div>
 
