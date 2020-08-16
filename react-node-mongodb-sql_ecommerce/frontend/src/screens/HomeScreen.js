@@ -90,11 +90,14 @@ function HomeScreen(props) {
                     <span className="tooltiptext">дискови резачки</span>
                 </div>
                 <div className="category">
-                    <img
-                        className="img-responsive"
-                        src={Hedgetrimmer}
-                        alt="hedgetrimmer"
-                    />
+                    <a href="/powersaws">
+                        <img
+                            className="img-responsive"
+                            src={Hedgetrimmer}
+                            alt="hedgetrimmer"
+                        />
+                    </a>
+
                     <span className="tooltiptext">ножици за жив плет</span>
                 </div>
                 <div className="category">

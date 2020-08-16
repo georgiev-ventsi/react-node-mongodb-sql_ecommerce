@@ -13,6 +13,7 @@ import CartScreen from './screens/CartScreen';
 import HomeScreen from './screens/HomeScreen';
 import BrushcutterScreen from './screens/BrushcutterScreen';
 import AutomowerScreen from './screens/AutomowerScreen'
+import PowersawsScreen from './screens/PowersawScreen'
 
 function App() {
 
@@ -27,7 +28,8 @@ function App() {
                             <Route path="/cart/:id?" component={CartScreen} />
                             <Route path="/chainsaws" component={ChainsawScreen} />
                             <Route path="/brushcutters" component={BrushcutterScreen} />
-                            <Route path="/automowers" component={AutomowerScreen}></Route>
+                            <Route path="/automowers" component={AutomowerScreen} />
+                            <Route path="/powersaws" component={PowersawsScreen} />
                             <Route path="/" exact={true} component={HomeScreen} />
                         </div>
                     </main>
