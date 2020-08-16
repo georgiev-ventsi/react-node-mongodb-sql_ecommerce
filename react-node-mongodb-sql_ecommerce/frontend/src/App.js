@@ -11,6 +11,7 @@ import ChainsawScreen from './screens/ChainsawScreen';
 import ProductScreen from './screens/ProductScreen';
 import CartScreen from './screens/CartScreen';
 import HomeScreen from './screens/HomeScreen';
+import BrushcutterScreen from './screens/BrushcutterScreen';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
                             <Route path="/product/:id" component={ProductScreen} />
                             <Route path="/cart/:id?" component={CartScreen} />
                             <Route path="/chainsaws" component={ChainsawScreen} />
+                            <Route path="/brushcutters" component={BrushcutterScreen} />
                             <Route path="/" exact={true} component={HomeScreen} />
                         </div>
                     </main>

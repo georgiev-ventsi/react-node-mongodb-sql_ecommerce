@@ -51,7 +51,7 @@ function HomeScreen(props) {
             {/* Categories */}
             <div className="main-categories">
                 <div className="category">
-                    <a href="/">
+                    <a href="/brushcutters">
                         <img
                             className="img-responsive"
                             src={Brushcutter}

@@ -27,5 +27,28 @@ const detailsProduct = (productID) => async (dispatch) => {
     }
 }
 
+// test listBrushcutters-----------------------------------
+const listBrushcutters = () => async (dispatch) => {
+    try {
+        dispatch({ type: PRODUCT_LIST_REQEST });
+        const { data } = await axios.get("/api/brushcutters");
+        dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
+    }
+    catch (error) {
+        dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message });
+    }
+}
 
-export { listProducts, detailsProduct }
+const detailsBrushcutters = (productID) => async (dispatch) => {
+    try {
+        dispatch({ type: PRODUCT_DETAILS_REQEST, payload: productID });
+        const { data } = await axios.get("/api/brushcutters/" + productID);
+        dispatch({ type: PRODUCT_DETAILS_SUCCESS, payload: data });
+
+    } catch (error) {
+        dispatch({ type: PRODUCT_DETAILS_FAIL, payload: error.message });
+    }
+}
+// listBrushcutters-----------------------------------------
+
+export { listProducts, detailsProduct, listBrushcutters, detailsBrushcutters }

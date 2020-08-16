@@ -237,5 +237,21 @@ export default {
             // salePrice: ,
             countInStock: 2
         }
+    ],
+    brushcutters: [
+        // each object is product
+        {
+            _id: '952715752',
+            name: 'Husqvarna 128R',
+            category: 'Моторни коси',
+            image: '/images/brushcutter/128R.png',
+            price: 494,
+            techDisplacement: 28,
+            techPower: 0.7,
+            techBar: '14 inch / 35 cm',
+            description: 'Лека моторна коса за поддръжка на терени със сравнително малка площ. Лесно стартиране с помощта на горивна помпа и системата Smart Start®. Подсилено жило на лоста за газта. Доставя се със самар, полуавтоматична тримерна глава и нож за трева.',
+            // salePrice: ,
+            countInStock: 2
+        }
     ]
 }

@@ -33,6 +33,10 @@
   font-family: var(--roboto);
 }
 
+.font-sofia {
+  font-family: var(--sofia);
+}
+
 .lightblue {
   color: lightblue;
 }
