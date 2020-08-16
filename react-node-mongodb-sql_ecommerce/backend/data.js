@@ -301,5 +301,21 @@ export default {
             salePrice: 520,
             countInStock: 2
         }
+    ],
+    blowers: [
+        // each object is product
+        {
+            _id: '952715643',
+            name: 'Husqvarna 125B',
+            category: 'Моторни метли',
+            image: '/images/blower/125B.png',
+            price: 510,
+            techDisplacement: 28,
+            techPower: 0.8,
+            techBar: 'Скорост на въздуха - 76 m/s',
+            description: 'Ефективна ръчна моторна метла подходяща за частни потребители, съчетаваща сила и ергономия. Изключително лесна за маневриране благодарение на балансираното разположение на въздушната тръба.',
+            salePrice: 440,
+            countInStock: 2
+        }
     ]
 }

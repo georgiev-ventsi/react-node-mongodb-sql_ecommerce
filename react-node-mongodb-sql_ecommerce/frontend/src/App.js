@@ -15,6 +15,7 @@ import BrushcutterScreen from './screens/BrushcutterScreen';
 import AutomowerScreen from './screens/AutomowerScreen'
 import PowersawsScreen from './screens/PowersawScreen'
 import HedgetrimmerScreen from './screens/HedgetrimmerScreen';
+import BlowerScreen from './screens/BlowerScreen';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
                             <Route path="/automowers" component={AutomowerScreen} />
                             <Route path="/powersaws" component={PowersawsScreen} />
                             <Route path="/hedgetrimmers" component={HedgetrimmerScreen} />
+                            <Route path="/blowers" component={BlowerScreen} />
                             <Route path="/" exact={true} component={HomeScreen} />
                         </div>
                     </main>

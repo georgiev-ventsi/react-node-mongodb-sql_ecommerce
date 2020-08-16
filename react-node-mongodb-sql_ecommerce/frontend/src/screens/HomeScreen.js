@@ -101,7 +101,7 @@ function HomeScreen(props) {
                     <span className="tooltiptext">ножици за жив плет</span>
                 </div>
                 <div className="category">
-                    <a href="/">
+                    <a href="/blowers">
                         <img
                             className="img-responsive"
                             src={Blower}

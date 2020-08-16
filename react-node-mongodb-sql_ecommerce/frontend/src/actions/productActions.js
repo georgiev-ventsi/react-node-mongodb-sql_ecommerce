@@ -120,6 +120,29 @@ const detailsHedgetrimmers = (productID) => async (dispatch) => {
     }
 }
 
+// blowers ---------------------------------------
+const listBlowers = () => async (dispatch) => {
+    try {
+        dispatch({ type: PRODUCT_LIST_REQEST });
+        const { data } = await axios.get("/api/blowers");
+        dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
+    }
+    catch (error) {
+        dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message });
+    }
+}
+
+const detailsBlowers = (productID) => async (dispatch) => {
+    try {
+        dispatch({ type: PRODUCT_DETAILS_REQEST, payload: productID });
+        const { data } = await axios.get("/api/blowers/" + productID);
+        dispatch({ type: PRODUCT_DETAILS_SUCCESS, payload: data });
+
+    } catch (error) {
+        dispatch({ type: PRODUCT_DETAILS_FAIL, payload: error.message });
+    }
+}
+
 export {
     listProducts,
     detailsProduct,
@@ -130,5 +153,7 @@ export {
     listPowersaws,
     detailsPowersaws,
     listHedgetrimmers,
-    detailsHedgetrimmers
+    detailsHedgetrimmers,
+    listBlowers,
+    detailsBlowers
 }
