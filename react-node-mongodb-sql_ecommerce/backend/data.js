@@ -253,5 +253,21 @@ export default {
             // salePrice: ,
             countInStock: 2
         }
+    ],
+    automowers: [
+        // each object is product
+        {
+            _id: '967645416',
+            name: 'Husqvarna Automower 105',
+            category: 'Косачки роботи',
+            image: '/images/robotic/am105.png',
+            price: 2540,
+            techDisplacement: '600 m² ±20%',
+            techPower: 0.7,
+            techBar: '14 inch / 35 cm',
+            description: 'Компактна 3-колесна роботизирана косачка за ефективно косене на по-открити тревни площи. Подходящ и за по-малки тревни площи до 600 м², може да обработва склонове с наклон от 25%. Лесна за използване, има възможност за персонални настройки. Налична и в бял цвят.',
+            // salePrice: ,
+            countInStock: 2
+        }
     ]
 }

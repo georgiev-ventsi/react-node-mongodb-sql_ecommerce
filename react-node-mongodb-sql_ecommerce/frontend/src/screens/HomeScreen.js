@@ -71,7 +71,7 @@ function HomeScreen(props) {
                     <span className="tooltiptext">моторни триони</span>
                 </div>
                 <div className="category">
-                    <a href="./html/automower.html">
+                    <a href="/automowers">
                         <img
                             className="img-responsive"
                             src={Automower}
@@ -81,11 +81,12 @@ function HomeScreen(props) {
                     <span className="tooltiptext">роботизирани косачки</span>
                 </div>
                 <div className="category">
-                    <img
-                        className="img-responsive"
-                        src={PowerSaw}
-                        alt="powersaw"
-                    />
+                    <a href="/">
+                        <img
+                            className="img-responsive"
+                            src={PowerSaw}
+                            alt="powersaw"
+                        /></a>
                     <span className="tooltiptext">дискови резачки</span>
                 </div>
                 <div className="category">

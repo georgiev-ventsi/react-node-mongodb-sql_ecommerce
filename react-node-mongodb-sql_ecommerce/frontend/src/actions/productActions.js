@@ -4,6 +4,7 @@ import {
 } from "../constants/productConstants";
 import axios from 'axios';
 
+// chainsaws
 const listProducts = () => async (dispatch) => {
     try {
         dispatch({ type: PRODUCT_LIST_REQEST });
@@ -27,7 +28,7 @@ const detailsProduct = (productID) => async (dispatch) => {
     }
 }
 
-// test listBrushcutters-----------------------------------
+// Brushcutters-----------------------------------
 const listBrushcutters = () => async (dispatch) => {
     try {
         dispatch({ type: PRODUCT_LIST_REQEST });
@@ -49,6 +50,28 @@ const detailsBrushcutters = (productID) => async (dispatch) => {
         dispatch({ type: PRODUCT_DETAILS_FAIL, payload: error.message });
     }
 }
-// listBrushcutters-----------------------------------------
 
-export { listProducts, detailsProduct, listBrushcutters, detailsBrushcutters }
+// Automower-----------------------------------
+const listAutomowers = () => async (dispatch) => {
+    try {
+        dispatch({ type: PRODUCT_LIST_REQEST });
+        const { data } = await axios.get("/api/automowers");
+        dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
+    }
+    catch (error) {
+        dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message });
+    }
+}
+
+const detailsAutomowers = (productID) => async (dispatch) => {
+    try {
+        dispatch({ type: PRODUCT_DETAILS_REQEST, payload: productID });
+        const { data } = await axios.get("/api/automowers/" + productID);
+        dispatch({ type: PRODUCT_DETAILS_SUCCESS, payload: data });
+
+    } catch (error) {
+        dispatch({ type: PRODUCT_DETAILS_FAIL, payload: error.message });
+    }
+}
+
+export { listProducts, detailsProduct, listBrushcutters, detailsBrushcutters, listAutomowers, detailsAutomowers }

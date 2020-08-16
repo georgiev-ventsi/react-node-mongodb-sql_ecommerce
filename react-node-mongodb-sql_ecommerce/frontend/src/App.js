@@ -12,6 +12,7 @@ import ProductScreen from './screens/ProductScreen';
 import CartScreen from './screens/CartScreen';
 import HomeScreen from './screens/HomeScreen';
 import BrushcutterScreen from './screens/BrushcutterScreen';
+import AutomowerScreen from './screens/AutomowerScreen'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
                             <Route path="/cart/:id?" component={CartScreen} />
                             <Route path="/chainsaws" component={ChainsawScreen} />
                             <Route path="/brushcutters" component={BrushcutterScreen} />
+                            <Route path="/automowers" component={AutomowerScreen}></Route>
                             <Route path="/" exact={true} component={HomeScreen} />
                         </div>
                     </main>
